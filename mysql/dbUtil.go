@@ -1,4 +1,4 @@
-package db
+package mysql
 
 import (
 	"fmt"
@@ -24,6 +24,6 @@ func DbObj() *gorm.DB {
 		fmt.Println("connection succedssed")
 		db.SingularTable(true)
 	}
-	// defer db.Close()
+	// defer mysql.Close()
 	return db
 }
